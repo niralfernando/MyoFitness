@@ -94,14 +94,14 @@ public class HelloWorldActivity extends Activity {
         // policy, that means poses will now be delivered to the listener.
         @Override
         public void onUnlock(Myo myo, long timestamp) {
-            mLockStateView.setText(R.string.unlocked);
+            mLockStateView.setText("Welcome Back!");
         }
 
         // onLock() is called whenever a synced Myo has been locked. Under the standard locking
         // policy, that means poses will no longer be delivered to the listener.
         @Override
         public void onLock(Myo myo, long timestamp) {
-            mLockStateView.setText(R.string.locked);
+            mLockStateView.setText("Welcome Back!");
         }
 
         // onOrientationData() is called whenever a Myo provides its current orientation,

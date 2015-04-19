@@ -9,11 +9,11 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="Rep">
+        android:label="FitnessCoach">
 
         <activity
             android:name="com.thalmic.android.sample.helloworld.HelloWorldActivity"
-            android:label="Rep">
+            android:label="FitnessCoach">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

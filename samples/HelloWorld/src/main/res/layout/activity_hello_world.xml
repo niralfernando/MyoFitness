@@ -8,12 +8,12 @@
 
     <TextView
         android:id="@+id/lock_state"
-        android:text="@string/locked"
+        android:text="Welcome Back!"
         android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="15dp"
         tools:ignore="SpUsage"/>
 
     <TextView
