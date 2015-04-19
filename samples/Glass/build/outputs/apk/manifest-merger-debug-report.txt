@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:5
 	android:versionName
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 	android:versionCode
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
@@ -24,10 +24,10 @@ activity#com.thalmic.android.sample.glass.MainActivity
 ADDED from AndroidManifest.xml:10:9
 	android:label
 		ADDED from AndroidManifest.xml:14:13
-	android:icon
-		ADDED from AndroidManifest.xml:12:13
 	android:immersive
 		ADDED from AndroidManifest.xml:13:13
+	android:icon
+		ADDED from AndroidManifest.xml:12:13
 	android:name
 		ADDED from AndroidManifest.xml:11:13
 intent-filter#com.google.android.glass.action.VOICE_TRIGGER

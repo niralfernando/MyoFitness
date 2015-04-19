@@ -6,4 +6,4 @@
         android:orderInCategory="1000"
         android:title="@string/myosdk__action_scan"
         />
-</menu><!-- From: file:/Applications/TeamCity/buildAgent/work/ca8535995f06927f/MyoSDK/sdk/src/main/res/menu/myosdk__fragment_scan.xml --><!-- From: file:/Users/kartheekgajjala1/Documents/myo-android-sdk-0.10.0/samples/HelloWorld/build/intermediates/exploded-aar/com.thalmic/myosdk/0.10.0/res/menu/myosdk__fragment_scan.xml -->
+</menu><!-- From: file:/Applications/TeamCity/buildAgent/work/ca8535995f06927f/MyoSDK/sdk/src/main/res/menu/myosdk__fragment_scan.xml --><!-- From: file:/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/build/intermediates/exploded-aar/com.thalmic/myosdk/0.10.0/res/menu/myosdk__fragment_scan.xml -->

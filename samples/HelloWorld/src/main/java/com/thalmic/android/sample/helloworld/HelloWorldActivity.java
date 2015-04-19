@@ -27,6 +27,11 @@ import com.thalmic.myo.Quaternion;
 import com.thalmic.myo.XDirection;
 import com.thalmic.myo.scanner.ScanActivity;
 
+import com.getpebble.android.kit.PebbleKit;
+import com.getpebble.android.kit.util.PebbleDictionary;
+
+import java.util.UUID;
+
 public class HelloWorldActivity extends Activity {
 
     private TextView mLockStateView;
@@ -37,6 +42,19 @@ public class HelloWorldActivity extends Activity {
     float state = 1;
     float reps = 1;
     float filteredData;
+
+    //pebble variables//
+    private static final UUID WATCHAPP_UUID = UUID.fromString("6092637b-8f58-4199-94d8-c606b1e45040");
+    private static final String WATCHAPP_FILENAME = "android-example.pbw";
+
+    private static final int
+            KEY_BUTTON = 0,
+            KEY_VIBRATE1 = 2,
+            KEY_VIBRATE = 1,
+            BUTTON_UP = 0,
+            BUTTON_SELECT = 1,
+            BUTTON_DOWN = 2;
+    //----------------//
 
     // Classes that inherit from AbstractDeviceListener can be used to receive events from Myo devices.
     // If you do not override an event, the default behavior is to do nothing.
@@ -122,6 +140,25 @@ public class HelloWorldActivity extends Activity {
                     //Log.d("TAG","FILTERED DATA" + filteredData);
                     state = 1;
                     reps++;
+
+                    //Pebble stuff//
+
+                    // Send KEY_VIBRATE to Pebble
+                    if(reps > 5){
+                    PebbleDictionary out = new PebbleDictionary();
+                    out.addInt32(KEY_VIBRATE1, 0);
+                    PebbleKit.sendDataToPebble(getApplicationContext(), WATCHAPP_UUID, out);
+                }
+                   else{
+                    PebbleDictionary out = new PebbleDictionary();
+                    out.addInt32(KEY_VIBRATE, 0);
+                    PebbleKit.sendDataToPebble(getApplicationContext(), WATCHAPP_UUID, out); }
+
+
+
+                    //-----------//
+
+
                     Log.d("TAG", "State3 Finished ");
                     Log.d("TAG", "FilteredData" +pitch);
                 }

@@ -6,4 +6,4 @@
         android:showAsAction="ifRoom"
         android:title="@string/scan"
         />
-</menu><!-- From: file:/Users/kartheekgajjala1/Documents/myo-android-sdk-0.10.0/samples/HelloWorld/src/main/res/menu/main.xml -->
+</menu><!-- From: file:/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/src/main/res/menu/main.xml -->

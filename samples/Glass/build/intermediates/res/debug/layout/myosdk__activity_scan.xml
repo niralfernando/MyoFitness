@@ -11,4 +11,4 @@
         android:layout_height="wrap_content"
         tools:layout="@layout/myosdk__fragment_scan" />
 
-</FrameLayout><!-- From: file:/Applications/TeamCity/buildAgent/work/ca8535995f06927f/MyoSDK/sdk/src/main/res/layout/myosdk__activity_scan.xml --><!-- From: file:/Users/kartheekgajjala1/Documents/myo-android-sdk-0.10.0/samples/Glass/build/intermediates/exploded-aar/com.thalmic/myosdk/0.10.0/res/layout/myosdk__activity_scan.xml -->
+</FrameLayout><!-- From: file:/Applications/TeamCity/buildAgent/work/ca8535995f06927f/MyoSDK/sdk/src/main/res/layout/myosdk__activity_scan.xml --><!-- From: file:/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/Glass/build/intermediates/exploded-aar/com.thalmic/myosdk/0.10.0/res/layout/myosdk__activity_scan.xml -->

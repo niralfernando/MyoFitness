@@ -55,4 +55,4 @@
         android:visibility="gone"
         android:background="@drawable/myosdk__connected_dot" />
 
-</RelativeLayout><!-- From: file:/Applications/TeamCity/buildAgent/work/ca8535995f06927f/MyoSDK/sdk/src/main/res/layout/myosdk__device_list_item.xml --><!-- From: file:/Users/kartheekgajjala1/Documents/myo-android-sdk-0.10.0/samples/Background/build/intermediates/exploded-aar/com.thalmic/myosdk/0.10.0/res/layout/myosdk__device_list_item.xml -->
+</RelativeLayout><!-- From: file:/Applications/TeamCity/buildAgent/work/ca8535995f06927f/MyoSDK/sdk/src/main/res/layout/myosdk__device_list_item.xml --><!-- From: file:/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/Background/build/intermediates/exploded-aar/com.thalmic/myosdk/0.10.0/res/layout/myosdk__device_list_item.xml -->

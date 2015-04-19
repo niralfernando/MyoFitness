@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:5
 	android:versionName
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 	android:versionCode
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
@@ -44,6 +44,7 @@ ADDED from AndroidManifest.xml:20:17
 		ADDED from AndroidManifest.xml:20:27
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.getpebble:pebblekit:3.0.0:7:5
 MERGED from com.thalmic:myosdk:0.10.0:7:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
