@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/build/intermediates/exploded-aar/com.thalmic/myosdk/0.10.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="d189db75174a41996c33bb243d2228aacf10fa53">
-        <dex dex="/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/build/intermediates/pre-dexed/debug/classes-40e5106abc4b97429c9f47f72c1d12c33a093f3f.jar" />
-    </item>
-    <item
         jar="/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/build/intermediates/exploded-aar/com.getpebble/pebblekit/3.0.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
@@ -21,6 +14,13 @@
         revision="19.1.0"
         sha1="d24ac9790966ffbd1bd9d921a262572c94903027">
         <dex dex="/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/build/intermediates/pre-dexed/debug/native-libs-a5271385855cb9e41af32199a0f32332ec836156.jar" />
+    </item>
+    <item
+        jar="/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/build/intermediates/exploded-aar/com.thalmic/myosdk/0.10.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d189db75174a41996c33bb243d2228aacf10fa53">
+        <dex dex="/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/build/intermediates/pre-dexed/debug/classes-40e5106abc4b97429c9f47f72c1d12c33a093f3f.jar" />
     </item>
 
 </items>

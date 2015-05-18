@@ -6,6 +6,7 @@
 package com.thalmic.android.sample.helloworld;
 
 import android.app.Activity;
+import android.os.StrictMode;
 import android.util.Log;
 import android.content.Intent;
 import android.graphics.Color;
@@ -30,6 +31,17 @@ import com.thalmic.myo.scanner.ScanActivity;
 import com.getpebble.android.kit.PebbleKit;
 import com.getpebble.android.kit.util.PebbleDictionary;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.auth.BasicScheme;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class HelloWorldActivity extends Activity {
@@ -87,7 +99,7 @@ public class HelloWorldActivity extends Activity {
         @Override
         public void onArmUnsync(Myo myo, long timestamp) {
             int Test = 1;
-            mTextView.setText("Reps: " + Test);
+            mTextView.setText("I'M READY!");
         }
 
         // onUnlock() is called whenever a synced Myo has been unlocked. Under the standard locking
@@ -186,7 +198,7 @@ public class HelloWorldActivity extends Activity {
             switch (pose) {
                 case UNKNOWN:
                     int Test = 1;
-                    mTextView.setText("Reps: " + Test);
+                    mTextView.setText("I'M READY!");
                     break;
                 case REST:
                 case DOUBLE_TAP:
@@ -202,10 +214,10 @@ public class HelloWorldActivity extends Activity {
                             break;
                     }
                     int Test1 = 1;
-                    mTextView.setText("Reps: " + Test1);
+                    mTextView.setText("GO HARD!");
                     break;
                 case FIST:
-                    mTextView.setText(getString(R.string.pose_fist));
+                    mTextView.setText("GO HARD!");
                     break;
                 case WAVE_IN:
                     mTextView.setText(getString(R.string.pose_wavein));
@@ -283,6 +295,24 @@ public class HelloWorldActivity extends Activity {
 
         // Next, register for DeviceListener callbacks.
         hub.addListener(mListener);
+
+        StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.LAX);
+        try {
+            HttpClient client = new DefaultHttpClient();
+            String address = "https://api.twilio.com/2010-04-01/Accounts/AC4911473026d9eb858fd7ad56ed36c6ee/Messages.json";
+            HttpPost post = new HttpPost(address);
+            List<NameValuePair> pairs = new ArrayList<NameValuePair>();
+            pairs.add(new BasicNameValuePair("To", "9057812712"));
+            pairs.add(new BasicNameValuePair("From", "(289) 401-0174"));
+            pairs.add(new BasicNameValuePair("Body", "Hey Matt, Congrats on finishing your 2 sets of bicep curls, however your friend Kartheek did 3 sets of bicep curls. Here's a quote to inspire you - Insanity: doing the same thing over and over again and expecting different results. (Albert Einstein)"));
+            post.addHeader(BasicScheme.authenticate(new UsernamePasswordCredentials("AC4911473026d9eb858fd7ad56ed36c6ee", "7740787eb01ee46ff99ab510b5d2d5e5"), "UTF-8", false));
+            post.setEntity(new UrlEncodedFormEntity(pairs));
+            client.execute(post);
+
+        }
+        catch (Exception e){
+            Log.e("Test", e.toString(), e);
+        }
     }
 
     @Override

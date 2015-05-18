@@ -6,9 +6,11 @@ int dimen myosdk__activity_horizontal_margin 0x7f060000
 int dimen myosdk__activity_vertical_margin 0x7f060001
 int dimen myosdk__fragment_scan_window_height 0x7f060002
 int dimen myosdk__fragment_scan_window_width 0x7f060003
-int drawable ic_launcher 0x7f020000
-int drawable myosdk__connected_dot 0x7f020001
-int drawable myosdk__firmware_incompatible_dot 0x7f020002
+int drawable graph 0x7f020000
+int drawable home_background4 0x7f020001
+int drawable ic_launcher 0x7f020002
+int drawable myosdk__connected_dot 0x7f020003
+int drawable myosdk__firmware_incompatible_dot 0x7f020004
 int id action_scan 0x7f0a0008
 int id container 0x7f0a0000
 int id lock_state 0x7f0a0001

@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.thalmic.android.sample.helloworld.HelloWorldActivity"
-    tools:ignore="MergeRootFrame">
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/home_background4">
 
     <TextView
         android:id="@+id/lock_state"
@@ -18,12 +19,21 @@
 
     <TextView
         android:id="@+id/text"
-        android:text="@string/NumberofReps"
+        android:text="Workout TIME!"
         android:textSize="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        tools:ignore="SpUsage"/>
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_marginTop="350dp"-->
+        <!--android:background="@drawable/graph" />-->
+
 
 </FrameLayout>
 <!-- From: file:/Users/niralfernando/Documents/workspace/Hackathons/BrickHack/MyoFitness/samples/HelloWorld/src/main/res/layout/activity_hello_world.xml -->
